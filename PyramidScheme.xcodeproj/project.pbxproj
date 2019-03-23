@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47B7D0A32246E90F00BDFD65 /* GasProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7D0A22246E90F00BDFD65 /* GasProvider.swift */; };
 		47DF5B5622459D2200E4EF52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF5B5522459D2200E4EF52 /* AppDelegate.swift */; };
 		47DF5B5822459D2200E4EF52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF5B5722459D2200E4EF52 /* ViewController.swift */; };
 		47DF5B5B22459D2200E4EF52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DF5B5922459D2200E4EF52 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47B7D0A22246E90F00BDFD65 /* GasProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasProvider.swift; sourceTree = "<group>"; };
 		47DF5B5222459D2200E4EF52 /* PyramidScheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyramidScheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DF5B5522459D2200E4EF52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47DF5B5722459D2200E4EF52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				47DF5B5522459D2200E4EF52 /* AppDelegate.swift */,
 				47DF5B5722459D2200E4EF52 /* ViewController.swift */,
+				47B7D0A22246E90F00BDFD65 /* GasProvider.swift */,
 				47DF5B5922459D2200E4EF52 /* Main.storyboard */,
 				47DF5B5C22459D2200E4EF52 /* Assets.xcassets */,
 				47DF5B5E22459D2200E4EF52 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				47DF5B5822459D2200E4EF52 /* ViewController.swift in Sources */,
 				47DF5B5622459D2200E4EF52 /* AppDelegate.swift in Sources */,
+				47B7D0A32246E90F00BDFD65 /* GasProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var tip = 0
     var gas = 5
     var gameTick = 0
+    var gasProv = GasProvider()
     
     //Labels
     @IBOutlet weak var moneyLabel: UILabel!
@@ -31,33 +32,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //Function updates labels with their variables
     func updateLabels() {
         moneyLabel.text = "$\(money)"
         dayLabel.text = "Day \(day)"
         driverLabel.text = "Drivers: \(drivers)"
-        gasLabel.text = gasVariable()
+        gasLabel.text = gasProv.gasVariable(gas: gas)
         payLabel.text = "Pay: $\(pay) + Tip: $\(tip)"
     }
     
-    func gasVariable() -> String {
-        var display = ""
-        switch gas {
-        case 1:
-            display = "+----"
-        case 2:
-            display = "++---"
-        case 3:
-            display = "+++--"
-        case 4:
-            display = "++++-"
-        case 5:
-            display = "+++++"
-        default:
-            display = "---"
-        }
-        return display
-    }
-    
+    //A delivery checks if there is enough gas. If there is, it pays out the amount of money
+    //If not you are towed
     @IBAction func deliveryButton() {
         if gas > 1 {
             pay = 4
@@ -71,6 +56,7 @@ class ViewController: UIViewController {
             gas = 5
             updateLabels()
         }
+        
         gameTick += 1
         
         if gameTick >= 5 {
